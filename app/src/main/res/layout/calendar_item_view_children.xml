@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <View
+        android:id="@+id/calendar_colour_view"
+        android:background="@android:color/darker_gray"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <com.getslapp.slapp.AileronTextView
+        android:id="@+id/calendar_time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/calendar_colour_view"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="@android:color/black" />
+    <com.getslapp.slapp.AileronTextView
+        android:id="@+id/calendar_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/calendar_time_textview"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Event"
+        android:textColor="@android:color/black" />
+    <View style="@style/Divider"
+        android:layout_below="@+id/calendar_colour_view"/>
+</merge>

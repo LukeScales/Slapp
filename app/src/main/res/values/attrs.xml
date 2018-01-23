@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<resources>
+    <declare-styleable name="CalendarView">
+        <attr name="dateFormat" format="string"/>
+    </declare-styleable>
+</resources>

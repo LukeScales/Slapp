@@ -1,0 +1,323 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getslapp.slapp.CalendarEventFragment"
+    android:background="#F3F3F3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/calendar_event_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Name:"
+                    android:textSize="18sp" />
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/calendar_event_name_edittext"
+                    android:layout_weight="1"
+                    android:hint="Event Name"
+                    android:textAlignment="center"
+                    android:background="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/calendar_event_time_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Time:"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/calendar_event_starttime_spinner"
+                    android:layout_weight="1"
+                    android:entries="@array/times"
+                    android:popupBackground="#EEEEEE" />
+
+                <com.getslapp.slapp.AileronTextView
+                    android:text=" - "
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/calendar_event_endtime_spinner"
+                    android:layout_weight="1"
+                    android:entries="@array/times"
+                    android:popupBackground="#EEEEEE" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <!--EditText
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:inputType="time"
+                    android:ems="10"
+                    android:id="@+id/calendar_event_endtime_edittext"
+                    android:layout_weight="1"
+                    android:hint="09:00"
+                    android:textAlignment="center" /-->
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/calendar_event_date_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Date:"
+                    android:textSize="18sp" />
+
+                <com.getslapp.slapp.AileronTextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/calendar_event_date_textpicker"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/calendar_colour_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Colour:"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/calendar_event_colour_button"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:elevation="0dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="100dp">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/calendar_event_description_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Description:"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"/>
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/calendar_event_description_edittext"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center"
+                    android:hint="Add a description."
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="100dp">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/calendar_event_location_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Location:"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine|textPostalAddress"
+                    android:ems="10"
+                    android:id="@+id/calendar_event_location_edittext"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center"
+                    android:hint="Add a location."
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/cancel"
+                    android:id="@+id/calendar_event_cancel_button"
+                    android:layout_weight="1"
+                    android:tint="@android:color/holo_red_dark"
+                    android:layout_margin="10dp"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:scaleType="fitCenter"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/delete"
+                    android:id="@+id/calendar_event_delete_button"
+                    android:layout_weight="1"
+                    android:tint="@android:color/black"
+                    android:layout_margin="10dp"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:scaleType="fitCenter" />
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/checkmark"
+                    android:id="@+id/calendar_event_save_button"
+                    android:layout_weight="1"
+                    android:tint="@color/colorPrimary"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <View style="@style/Divider"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

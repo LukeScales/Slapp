@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/item_imageView"
+        android:background="@android:color/darker_gray"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"/>
+    <com.getslapp.slapp.AileronTextView
+        android:id="@+id/item_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_imageView"
+        android:text="title text"/>
+    <com.getslapp.slapp.AileronTextView
+        android:id="@+id/item_descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_imageView"
+        android:layout_below="@id/item_titleTextView"
+        android:layout_marginTop="5dp"
+        android:text="description text"/>
+    <View style="@style/Divider"
+        android:layout_below="@+id/item_imageView"/>
+</merge>

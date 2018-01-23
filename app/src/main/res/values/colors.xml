@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<resources>
+    <color name="colorPrimary">#48e651</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#48e651</color>
+    <color name="background_grey">#3a3c45</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="selected_day">#55888888</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="autumn">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+</resources>

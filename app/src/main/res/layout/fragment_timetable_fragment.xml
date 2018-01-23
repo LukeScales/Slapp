@@ -1,0 +1,199 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getslapp.slapp.TimetableFragment"
+    android:background="#F3F3F3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Monday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_monday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_monday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/monday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_tuesday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/tuesday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_wednesday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_wednesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/wednesday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Thursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_thursday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_thursday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/thursday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Friday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_friday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_friday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/friday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Saturday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_saturday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_saturday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/saturday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <com.getslapp.slapp.AileronTextView
+                android:text="Sunday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timetable_sunday_textview"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"/>
+
+            <View style="@style/Divider"/>
+
+            <!--FrameLayout
+                android:id="@+id/fl_sunday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <ListView
+                android:id="@+id/sunday_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <View style="@style/Divider"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

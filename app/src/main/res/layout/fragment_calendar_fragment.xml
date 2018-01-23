@@ -1,0 +1,59 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.getslapp.slapp.CalendarFragment"
+    android:background="#F3F3F3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.getslapp.slapp.CalendarView
+            xmlns:calendarNS="http://schemas.android.com/apk/res/com.getslapp.slapp"
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            calendarNS:dateFormat="MMMM yyyy"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/view" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/list"/>
+
+        <com.getslapp.slapp.AileronTextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No events."
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/plus"
+        app:fabSize="mini"
+        android:id="@+id/calendar_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:tint="@android:color/white"/>
+
+
+</FrameLayout>

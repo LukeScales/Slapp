@@ -1,0 +1,415 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.getslapp.slapp.TimetableEventFragment"
+    android:background="#F3F3F3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_module_code_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Module Code:"
+                    android:textSize="18sp" />
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/timetable_event_module_code_edittext"
+                    android:layout_weight="1"
+                    android:hint="Code"
+                    android:textAlignment="center"
+                    android:background="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_module_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Module Name:"
+                    android:textSize="18sp" />
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/timetable_event_module_name_edittext"
+                    android:layout_weight="1"
+                    android:hint="Name"
+                    android:textAlignment="center"
+                    android:background="#FFFFFF"/>
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_time_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Time:"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/timetable_event_starttime_spinner"
+                    android:layout_weight="1"
+                    android:entries="@array/times"
+                    android:popupBackground="#EEEEEE" />
+
+                <com.getslapp.slapp.AileronTextView
+                    android:text=" - "
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/timetable_event_endtime_spinner"
+                    android:layout_weight="1"
+                    android:entries="@array/times"
+                    android:popupBackground="#EEEEEE" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_day_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Day:"
+                    android:textSize="18sp" />
+
+                <com.getslapp.slapp.AileronTextView
+                    android:text="Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/timetable_event_day_textpicker"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_weeks_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Weeks:"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"/>
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/timetable_event_weeks_edittext"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center"
+                    android:hint="Weeks"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_colour_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="viewStart"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Colour:"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/timetable_event_colour_button"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:elevation="0dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_type_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Type:"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"/>
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/timetable_event_type_edittext"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center"
+                    android:hint="Type."
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_lecturer_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Lecturer:"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"/>
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/timetable_event_lecturer_edittext"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center"
+                    android:hint="Add Lecturer."
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.getslapp.slapp.AileronTextView
+                    android:id="@+id/timetable_event_location_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="Location:"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+
+                <com.getslapp.slapp.AileronEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/timetable_event_location_edittext"
+                    android:background="#FFFFFF"
+                    android:textAlignment="center"
+                    android:hint="Add a location."
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/cancel"
+                    android:id="@+id/timetable_event_cancel_button"
+                    android:layout_weight="1"
+                    android:tint="@android:color/holo_red_dark"
+                    android:layout_margin="10dp"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:scaleType="fitCenter"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/delete"
+                    android:id="@+id/timetable_event_delete_button"
+                    android:layout_weight="1"
+                    android:tint="@android:color/black"
+                    android:layout_margin="10dp"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:scaleType="fitCenter" />
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:srcCompat="@drawable/checkmark"
+                    android:id="@+id/timetable_event_save_button"
+                    android:layout_weight="1"
+                    android:tint="@color/colorPrimary"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <View style="@style/Divider"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

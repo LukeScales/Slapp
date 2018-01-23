@@ -1,0 +1,225 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<resources>
+    <string name="app_name">SLAPP</string>
+    <string name="college">DCU</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Shared Preferences Key Names -->
+    <string name="shared_pref_timetable">timetable</string>
+    <string name="shared_pref_app_opens">app_opens</string>
+    <string name="shared_pref_timetable_set">timetable_set</string>
+    <string name="shared_pref_timetable_link">timetable_link</string>
+    <string name="shared_pref_college">college</string>
+    <string name="shared_pref_college_email">college_email</string>
+    <string name="shared_pref_course">course</string>
+    <string name="shared_pref_year">year</string>
+    <string name="shared_pref_semester">semester</string>
+    <string name="shared_pref_calendar">calendar</string>
+    <string name="shared_pref_promo_image_link">promo_image_link</string>
+    <string name="shared_pref_promo_url">promo_url</string>
+    <string name="shared_pref_promo_id">promo_id</string>
+    <string name="shared_pref_events_url_array">events_url</string>
+    <string name="shared_pref_events_id_array">events_id_array</string>
+    <string name="shared_pref_events_short_desc_array">events_short_desc_array</string>
+    <string name="shared_pref_events_long_desc_array">events_long_desc_array</string>
+    <string name="shared_pref_events_address_array">events_address_array</string>
+    <string name="shared_pref_events_time_array">events_time_array</string>
+    <string name="shared_pref_events_requester_array">events_requester_array</string>
+    <string name="shared_pref_events_contact_info_array">events_contact_info_array</string>
+
+    <!-- Timetable JSON Object Values -->
+    <string name="timetable_event_module_name">module_name</string>
+    <string name="timetable_event_module_code">module_code</string>
+    <string name="timetable_event_starttime">starttime</string>
+    <string name="timetable_event_endtime">endtime</string>
+    <string name="timetable_event_location">location</string>
+    <string name="timetable_event_lecturer">lecturer</string>
+    <string name="timetable_event_weeks">weeks</string>
+    <string name="timetable_event_type">type</string>
+    <string name="timetable_event_colour">colour</string>
+    <string name="timetable_event_monday">monday</string>
+    <string name="timetable_event_tuesday">tuesday</string>
+    <string name="timetable_event_wednesday">wednesday</string>
+    <string name="timetable_event_thursday">thursday</string>
+    <string name="timetable_event_friday">friday</string>
+    <string name="timetable_event_saturday">saturday</string>
+    <string name="timetable_event_sunday">sunday</string>
+
+    <!-- Calendar JSON Object Values -->
+    <string name="calendar_event_starttime">starttime</string>
+    <string name="calendar_event_endtime">endtime</string>
+    <string name="calendar_event_name">name</string>
+    <string name="calendar_event_description">description</string>
+    <string name="calendar_event_location">location</string>
+    <string name="calendar_event_colour">colour</string>
+
+    <string-array name="times">
+        <item>00:00</item>
+        <item>00:15</item>
+        <item>00:30</item>
+        <item>00:45</item>
+        <item>01:00</item>
+        <item>01:15</item>
+        <item>01:30</item>
+        <item>01:45</item>
+        <item>02:00</item>
+        <item>02:15</item>
+        <item>02:30</item>
+        <item>02:45</item>
+        <item>03:00</item>
+        <item>03:15</item>
+        <item>03:30</item>
+        <item>03:45</item>
+        <item>04:00</item>
+        <item>04:15</item>
+        <item>04:30</item>
+        <item>04:45</item>
+        <item>05:00</item>
+        <item>05:15</item>
+        <item>05:30</item>
+        <item>05:45</item>
+        <item>06:00</item>
+        <item>06:15</item>
+        <item>06:30</item>
+        <item>06:45</item>
+        <item>07:00</item>
+        <item>07:15</item>
+        <item>07:30</item>
+        <item>07:45</item>
+        <item>08:00</item>
+        <item>08:15</item>
+        <item>08:30</item>
+        <item>08:45</item>
+        <item>09:00</item>
+        <item>09:15</item>
+        <item>09:30</item>
+        <item>09:45</item>
+        <item>10:00</item>
+        <item>10:15</item>
+        <item>10:30</item>
+        <item>10:45</item>
+        <item>11:00</item>
+        <item>11:15</item>
+        <item>11:30</item>
+        <item>11:45</item>
+        <item>12:00</item>
+        <item>12:15</item>
+        <item>12:30</item>
+        <item>12:45</item>
+        <item>13:00</item>
+        <item>13:15</item>
+        <item>13:30</item>
+        <item>13:45</item>
+        <item>14:00</item>
+        <item>14:15</item>
+        <item>14:30</item>
+        <item>14:45</item>
+        <item>15:00</item>
+        <item>15:15</item>
+        <item>15:30</item>
+        <item>15:45</item>
+        <item>16:00</item>
+        <item>16:15</item>
+        <item>16:30</item>
+        <item>16:45</item>
+        <item>17:00</item>
+        <item>17:15</item>
+        <item>17:30</item>
+        <item>17:45</item>
+        <item>18:00</item>
+        <item>18:15</item>
+        <item>18:30</item>
+        <item>18:45</item>
+        <item>19:00</item>
+        <item>19:15</item>
+        <item>19:30</item>
+        <item>19:45</item>
+        <item>20:00</item>
+        <item>20:15</item>
+        <item>20:30</item>
+        <item>20:45</item>
+        <item>21:00</item>
+        <item>21:15</item>
+        <item>21:30</item>
+        <item>21:45</item>
+        <item>22:00</item>
+        <item>22:15</item>
+        <item>22:30</item>
+        <item>22:45</item>
+        <item>23:00</item>
+        <item>23:15</item>
+        <item>23:30</item>
+        <item>23:45</item>
+    </string-array>
+
+    <!-- Links Strings -->
+    <string-array name="tcd_link_texts">
+        <item>TCD Website</item>
+        <item>Blackboard</item>
+        <item>My TCD</item>
+    </string-array>
+
+    <string-array name="tcd_link_urls">
+        <item>https://www.tcd.ie/</item>
+        <item>https://mymodule.tcd.ie/</item>
+        <item>https://my.tcd.ie/</item>
+    </string-array>
+
+    <string-array name="dcu_link_texts">
+        <item>DCU Website</item>
+        <item>Loop</item>
+        <item>Portal</item>
+        <item>Online Timetable</item>
+    </string-array>
+
+    <string-array name="dcu_link_urls">
+        <item>https://www.dcu.ie/</item>
+        <item>https://loop.dcu.ie/</item>
+        <item>https://www.dcu.ie/portal/</item>
+        <item></item>
+    </string-array>
+
+    <!-- Promotions Strings -->
+    <string name="promotion_title">How to Promote</string>
+    <string name="promotion_message">If you want to see your promotion on the promotions page of our app, just email us the image you want to appear on the page and a URL to go to when the image is pressed. We will then contact you.</string>
+    <string name="promotion_email_subject">SLAPP - Promotion Request</string>
+    <string name="promotion_email_text">Hi, &#10; &#10; I\'d like to add something to the promotions page on your app...</string>
+
+    <string name="get_promotion_url">http://slapp.dynastysoftware.net:3000/getPromotion</string>
+    <string name="promotion_update_needed_url">http://slapp.dynastysoftware.net:3000/promotionUpdateNeeded</string>
+    <string name="promotion_image_url">http://slapp.dynastysoftware.net:3000/images/</string>
+
+    <string name="events_title">Add an Event</string>
+    <string name="events_message">Email us the following: The title of your events (max 5 words), a description (as long as you want), and a URL (optional), the address of the event, some contact information, and the date and time of your event. We will then contact you.</string>
+    <string name="events_email_subject">SLAPP - Event Advertising Request</string>
+    <string name="events_email_text">Hi, &#10; &#10; I\'d like advertise my event in your app...</string>
+
+    <string name="get_events_url">http://slapp.dynastysoftware.net:3000/getEvents</string>
+    <string name="events_update_needed_url">http://slapp.dynastysoftware.net:3000/eventsUpdateNeeded</string>
+
+    <string name="bug_title">Report a Bug</string>
+    <string name="bug_message">Please email us so that we can fix it as soon as possible. Try to be as detailed as possible in the description of the bug (what page you found it on, if it repeats every time, etc).</string>
+    <string name="bug_email_subject">SLAPP Android - Bug Report</string>
+    <string name="bug_email_text">Hi, &#10; &#10; I\'ve found a bug in your app.</string>
+
+    <string name="email">shanecarter.sc@gmail.com</string>
+    <string name="email_us">Email us</string>
+    <string name="copy_email">Copy Email</string>
+    <string name="default_email_subject">SLAPP Android</string>
+    <string name="default_email_text"></string>
+
+    <!-- Settings Strings -->
+    <string name="refresh_timetable_title">Refresh Timetable</string>
+    <string name="refresh_timetable_message">Are you sure you want to refresh your timetable? You will lose any changes which you have made to the current one.</string>
+    <string name="refresh_timetable_pos_choice">I\'m sure</string>
+    <string name="refresh_timetable_neg_choice">Cancel</string>
+
+</resources>

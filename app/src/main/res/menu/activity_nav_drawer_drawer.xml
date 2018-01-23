@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_timetable" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/timetable"
+            android:title="Timetable" />
+    </group>
+    <group android:id="@+id/group_calendar" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/calendar"
+            android:title="Calendar"
+            android:gravity="center"/>
+    </group>
+    <group android:id="@+id/group_links" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_links"
+            android:icon="@drawable/links"
+            android:title="Quick Links" />
+    </group>
+    <group android:id="@+id/group_events" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/events"
+            android:title="What's On?" />
+    </group>
+    <group android:id="@+id/group_promotions" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/promotions"
+            android:title="Promotions" />
+    </group>
+    <group android:id="@+id/group_settings" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+    </group>
+    <group android:id="@+id/group_about" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About" />
+    </group>
+</menu>

@@ -1,0 +1,62 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getslapp.slapp.SettingsFragment"
+    android:background="#F3F3F3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <View style="@style/Divider"/>
+
+            <com.getslapp.slapp.AileronButton
+                android:text="Refresh Timetable"
+                android:layout_width="match_parent"
+                android:id="@+id/refresh_button"
+                android:elevation="0dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:onClick="refreshTimetableDialog"/>
+
+            <View style="@style/Divider"/>
+
+            <com.getslapp.slapp.AileronButton
+                android:text="Download New Timetable"
+                android:layout_width="match_parent"
+                android:id="@+id/new_timetable_button"
+                android:elevation="0dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:onClick="downloadNewTimetable"/>
+
+            <View style="@style/Divider"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

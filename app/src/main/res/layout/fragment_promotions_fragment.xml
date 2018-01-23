@@ -1,0 +1,56 @@
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getslapp.slapp.PromotionsFragment"
+    android:background="#FFFFFF">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/slapp_logo"
+            android:id="@+id/imageButton4"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_alignBottom="@+id/view2"
+            android:background="@android:color/white"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="goToPromotion"/>
+
+        <com.getslapp.slapp.AileronButton
+            android:text="Want to see your promotion here?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:fontFamily="sans-serif"
+            android:textColor="#0000EE"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:onClick="promotionAlert"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <View style="@style/Divider"
+            android:id="@+id/view2"
+            android:layout_above="@+id/button3"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</FrameLayout>

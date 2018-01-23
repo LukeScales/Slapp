@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Kris Vanhoutte.
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/12/16 8:17 PM
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_nav_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getslapp.slapp.MainActivity"
+    tools:showIn="@layout/app_bar_nav_drawer">
+
+    <com.getslapp.slapp.AileronTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="@+id/content_nav_drawer"
+        app:layout_constraintLeft_toLeftOf="@+id/content_nav_drawer"
+        app:layout_constraintRight_toRightOf="@+id/content_nav_drawer"
+        app:layout_constraintTop_toTopOf="@+id/content_nav_drawer" />
+
+</android.support.constraint.ConstraintLayout>

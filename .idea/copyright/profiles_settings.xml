@@ -1,0 +1,7 @@
+<component name="CopyrightManager">
+  <settings default="SLAPP">
+    <module2copyright>
+      <element module="All" copyright="SLAPP" />
+    </module2copyright>
+  </settings>
+</component>
